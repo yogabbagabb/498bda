@@ -1,0 +1,84 @@
+\documentclass[../main.tex]{subfiles}
+
+
+
+%% Local Macros and packages: add any of your own definitions here.
+
+\begin{document}
+
+% Homework number, your name and NetID, and optionally, the names/NetIDs of anyone you collaborated with. If you did not collaborate with anybody, leave the last parameter empty.
+\homework
+    {1}
+    {Aahan Agrawal (agrawl10)}
+    {Udit Samani (usamani2), Ankit Gohel (ankitng2)}
+
+\section*{Problem (1)}
+\textbf{Solution:} 
+
+We will repeatedly use the fact that if $\sigma(z) = \frac{1}{1 + \exp(-z)}$ then\[ \frac{\partial}{\partial z}\sigma(z) = \frac{\exp(-z)}{\left(1 + \exp(-z)\right)^2} \]
+(a)\\
+
+Let $z = w^Tx^{i}$ and compute the gradient:
+
+\begin{align*}
+    \nabla f = \frac{1}{2n}\sum_{i \in [n]}^{}2\left[y^{i} - \sigma(w^Tx^{i})\right] \cdot \frac{\partial}{\partial z}(-\sigma(z)) \cdot \frac{\partial}{\partial w}(w^Tx^{(i)}) \\
+    = \frac{1}{2n}\sum_{i \in [n]}^{}2\left[y^{i} - \sigma(w^Tx^{i})\right] \cdot  \frac{- \exp(-z)}{\left(1 + \exp(-z)\right)^2} \cdot \left(x^{(i)}\right)^T \\
+    = \frac{1}{n}\sum_{i \in [n]}^{}\left[y^{i} - \sigma(w^Tx^{i})\right] \cdot  \frac{- \exp(-w^Tx^{i})}{\left(1 + \exp(-w^Tx^{i})\right)^2} \cdot \left(x^{(i)}\right)^T \\
+    \intertext{Take the transpose to obtain a column vector} \\
+    = \frac{1}{n}\sum_{i \in [n]}^{}\left[y^{i} - \sigma(w^Tx^{i})\right] \cdot  \frac{- \exp(-w^Tx^{i})}{\left(1 + \exp(-w^Tx^{i})\right)^2} \cdot \left(x^{(i)}\right) \\
+    \intertext{The update rule is} \\
+    w_{i+1} = w_{i} - \alpha \nabla f \\
+    \intertext{where $\alpha$ is some step size} \\
+\end{align*}
+
+(b) \\
+
+Let $z = y^{i}w^Tx^{i}$ and compute the gradient:
+\begin{align*}
+    \nabla f = \frac{1}{n}\sum_{i \in [n]}^{}\frac{-1}{\sigma(y^{i}w^Tx^{i})} \cdot \frac{\partial}{\partial z}\sigma(z) \cdot \frac{\partial}{\partial w}y^{i}w^{T}x^{i} \\ 
+    = \frac{-1}{n}\sum_{i \in [n]}^{}\frac{1}{\sigma(y^{i}w^Tx^{i})} \cdot \frac{\exp(-z)}{\left(1 + \exp(-z)\right)^2}  \cdot y^{i}\left(x^{i}\right)^T \\ 
+    = \frac{-1}{n}\sum_{i \in [n]}^{}\frac{1}{\sigma(y^{i}w^Tx^{i})} \cdot \frac{\exp(-y^{i}w^Tx^{i})}{\left(1 + \exp(-y^{i}w^Tx^{i})\right)^2}  \cdot y^{i}\left(x^{i}\right)^T \\ 
+    = \frac{-1}{n}\sum_{i \in [n]}^{}\frac{1 + \exp(-y^{i}w^Tx^{i})}{1} \cdot \frac{\exp(-y^{i}w^Tx^{i})}{\left(1 + \exp(-y^{i}w^Tx^{i})\right)^2}  \cdot y^{i}\left(x^{i}\right)^T \\ 
+    = \frac{-1}{n}\sum_{i \in [n]}^{}\frac{\exp(-y^{i}w^Tx^{i})}{\left(1 + \exp(-y^{i}w^Tx^{i})\right)}  \cdot y^{i}\left(x^{i}\right)^T \\ 
+    = \frac{-1}{n}\sum_{i \in [n]}^{}\frac{1}{\left(1 + \exp(y^{i}w^Tx^{i})\right)}  \cdot y^{i}\left(x^{i}\right)^T \\ 
+    \intertext{Now take the transpose of the RHS so that we express the gradient as a column vector} \\
+    = \frac{-1}{n}\sum_{i \in [n]}^{}\frac{1}{\left(1 + \exp(y^{i}w^Tx^{i})\right)}  \cdot y^{i}\left(x^{i}\right) \tag{$\gamma$}\\ 
+    \intertext{The update rule is} \\
+    w_{i+1} = w_{i} - \alpha \nabla f \\
+    \intertext{where $\alpha$ is some step size} \\
+\end{align*}
+
+
+(c) \\
+
+Take the Jacobian of $(\gamma)$; the transpose of that result will give us the Hessian:
+
+\begingroup
+\addtolength{\jot}{1em}
+\begin{align*}
+    H f = \frac{\partial }{\partial w}\nabla f = \frac{\partial }{\partial w} \frac{-1}{n}\sum_{i \in [n]}^{}\frac{y^{i}(x^{i})}{\left(1 + \exp(y^{i}w^Tx^{i})\right)}   \\ 
+    = \frac{-1}{n}\sum_{i\in [n]}^{}\frac{y^{i}\left(x^{i}\right)}{1}\frac{(-1)\exp{(y^{i}w^{T}x^{i})} y^{i}(x^{i})^{T}}{\left(1 + \exp(y^{i}w^Tx^{i})\right)^2}  \\
+    = \frac{-1}{n}\sum_{i\in [n]}^{}\frac{y^{i}\left(x^{i}\right)(-1)\exp{(y^{i}w^{T}x^{i})} y^{i}(x^{i})^{T}}{\left(1 + \exp(y^{i}w^Tx^{i})\right)^2}  \\
+    = \frac{1}{n}\sum_{i\in [n]}^{}\frac{y^{i}\left(x^{i}\right)\exp{(y^{i}w^{T}x^{i})}}{\left(1 + \exp(y^{i}w^Tx^{i})\right)^2}\cdot y^{i}(x^{i})^{T} \\
+    = \frac{1}{n}\sum_{i\in [n]}^{}\frac{\exp{(y^{i}w^{T}x^{i})}}{\left(1 + \exp(y^{i}w^Tx^{i})\right)^2}\cdot x^{i}(x^{i})^{T} \\
+    \intertext{It suffices to show that any one summation component is positive semidefinite to show that the entire summation (of matrices) is positive semidefinite. We observe that
+    these component matrices are symmetric, and so we do not take the transpose of any such
+matrix.}\\
+    \intertext{Observe that $\frac{\exp{(y^{i}w^{T}x^{i})}}{\left(1 + \exp(y^{i}w^Tx^{i})\right)^2}$ is some constant greater than $0$. Let us call this constant $\alpha$. Thus one matrix component that we wish to prove positive semidefinite is:} \\
+    \alpha(x^{i})(x^{i})^{T} \\
+    \intertext{Let $z$ be another vector in $\R^d$. We wish to show that} \\
+    z^{T}\left(\alpha(x^{i})(x^{i})^{T}\right)z \geq 0 \\
+    \intertext{The LHS is, equivalently:} \\
+    = \alpha \left((x^{i})^{T}z\right)^T\left((x^{i})^{T}z\right) \\
+    \intertext{which is, in fact at least $0$.} \\
+\end{align*}
+\endgroup
+
+
+
+
+%\newpage \nocite{*}
+%\bibliographystyle{ims}
+%\bibliography{citations}
+
+\end{document}

@@ -1,0 +1,117 @@
+\documentclass[../main.tex]{subfiles}
+
+
+
+%% Local Macros and packages: add any of your own definitions here.
+
+\begin{document}
+
+% Homework number, your name and NetID, and optionally, the names/NetIDs of anyone you collaborated with. If you did not collaborate with anybody, leave the last parameter empty.
+\homework
+    {1}
+    {Aahan Agrawal (agrawl10)}
+    {Udit Samani (usamani2), Ankit Gohel (ankitng2)}
+
+\section*{Problem (2)}
+
+(a)
+Multiply all nontrivial inequalities and the primal optimization problem by $-1$ to, firstly, turn this into a minimization problem and, secondly, get inequalities that follow the conventions for the Lagrangian. Explicitly, we are trying to now solve
+
+	\begin{align*}
+	&\min_{\{w_1, w_2, w_3, w_4\}} -w_1 + -2w_2 + -3w_3 +-4w_4, \\
+	s.t.\quad & w_1 \geq 0, w_2 \geq 0, w_3 \geq 0, w_4 \geq 0, \\
+	& -4w_1 + -3w_2 + -2w_3 + -w_4 + 10 \leq 0, \\
+	& -2w_1 + -w_2 + -w_3 + -2w_4 + 4 \leq 0.
+	\end{align*}
+	\\
+
+
+        Here $\lambda$ is the vector $[\lambda_1, \lambda_2]$ and each $\lambda_i \geq 0$. Set $W$ to be the constraint region given by $\{w_1 \geq 0, w_2 \geq 0, w_3 \geq 0, w_4 \geq 0\}$.
+The Lagrangian is
+
+\begin{multline*}
+    L(w, \lambda)_{\{w \in W\}} = \\
+    -w_1 + -2w_2 + -3w_3 + -4w_4  + \lambda_{1}(-4w_1 + -3w_2 + -2w_3 + -w_4 + 10) \\ + \lambda_{2}(-2w_1 + -w_2 + -w_3 + -2w_4 +4 )
+\end{multline*} \\
+
+Now we re-arrange the objective function to express it as 
+
+\[\sum_{i=1}^{4}(w_{i})(\text{Some expression involving $\lambda_1$ and $\lambda_2$}).\]
+
+\begin{multline*}
+    L(w, \lambda)_{\{w \in W\}} = \\
+    w_1(-1 - 4\lambda_1 -2\lambda_2) + w_2(-2 + -3\lambda_1 - 2\lambda_2) \\ + w_3(-3 - 2\lambda_1 - \lambda_{2}) + w_4(-4 - \lambda_{1} - 2\lambda_{2}) + 10\lambda_{1} + 4\lambda_{2}
+\end{multline*} \\
+
+Let $\Lambda = \{(\lambda_1, \lambda_2) | \lambda_{i} \geq 0\}$. The dual problem is
+
+\[
+    \max_{\lambda \in \Lambda} g(\lambda) = \max_{\lambda \in \Lambda} \inf_{w \in W}L(w, \lambda)\]
+
+\begin{align*}
+&\max_{\lambda \in \Lambda} 
+    10\lambda_{1} + 4\lambda_{2} , \\
+s.t.\quad & \lambda_1 \geq 0, \lambda_2 \geq 0, \\
+& -1 - 4\lambda_1 -2\lambda_2 \geq 0, \\
+& -2 + -3\lambda_1 - 2\lambda_2 \geq 0, \\
+& -3 - 2\lambda_1 - \lambda_{2} \geq 0, \\
+& -4 - \lambda_{1} - 2\lambda_{2} \geq 0.
+\end{align*}
+\\
+
+or, equivalently:
+
+\begin{align*}
+&\max_{\lambda \in \Lambda} 
+    10\lambda_{1} + 4\lambda_{2} , \\
+s.t.\quad & \lambda_1 \geq 0, \lambda_2 \geq 0, \\
+& 1 + 4\lambda_1 +2\lambda_2 \leq 0, \\
+& 2  +3\lambda_1 + 2\lambda_2 \leq 0, \\
+& 3 + 2\lambda_1 + \lambda_{2} \leq 0, \\
+& 4 + \lambda_{1} + 2\lambda_{2} \leq 0.
+\end{align*}
+
+This problem is infeasible. \\
+
+(b)
+
+Let $w = [w_1, w_2]$. The Lagrangian is
+
+\[
+    \frac{1}{2} w^Tw + v(2w_1 + w_2) = \frac{1}{2} w^Tw + v(w)^T(a)
+\]
+
+where
+
+\[
+    a = \begin{bmatrix}
+        2 \\
+        1 \\
+    \end{bmatrix}
+\]
+
+Let $\Nu = \{v | v \in \R \}$. The dual problem is
+
+\[
+    \max_{v \in \Nu} g(v) = \max_{v \in \Nu} \inf_{w \in W}\left(\frac{1}{2} w^Tw + v(w^T)(a)\right)
+\]
+To minimize this, find the gradient with respect to $w$ and set that to $0$.
+
+\begin{align*}
+    \nabla_{w} L =  w^T + a^Tv \\
+    \implies w^T + a^Tv = 0 \\ \implies w = (-va^T)^T \\ = -va
+\end{align*}
+
+Thus, the dual problem is
+
+\[
+    \max_{v \in \Nu} g(v) = \max_{v \in \Nu} \frac{1}{2} (v^2)a^Ta - v(v)(a^Ta) = \max_{v \in \Nu} \frac{-(v^2)a^Ta}{2}
+\]
+
+
+
+
+
+
+
+\end{document}
