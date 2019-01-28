@@ -1,0 +1,58 @@
+\documentclass[../main.tex]{subfiles}
+
+
+
+%% Local Macros and packages: add any of your own definitions here.
+
+\begin{document}
+
+% Homework number, your name and NetID, and optionally, the names/NetIDs of anyone you collaborated with. If you did not collaborate with anybody, leave the last parameter empty.
+
+\section*{Problem (1)}
+
+
+Define $X_{i}$ as the value chosen in the $i$th iteration. It follows that
+
+\[
+    X = \frac{1}{k}\sum_{i=1}^{k} X_{i}
+\]
+
+From this, we can compute $\Ex{X}$ and $\var{X}$.
+\begin{align*}
+    \Ex{X} &= \frac{1}{k} \Ex{\sum_{i=1}^{k} X_{i}} \\
+    &= \frac{1}{k} \sum_{i=1}^{k} \Ex{X_{i}} \\
+    &= \frac{1}{k} \sum_{i=1}^{k} \Ex{X_{i}} \\
+    &= \frac{1}{k} \sum_{i=1}^{k} \sum_{j=1}^{n}z_{j} \frac{1}{n} \\
+    &= \frac{1}{k} \sum_{i=1}^{k} \sum_{j=1}^{n}z_{j} \frac{1}{n} \\
+    &= \frac{1}{k} \sum_{i=1}^{k} \alpha \\
+    &= \alpha \\
+    \\
+    \var{X} &= \var{\frac{1}{k}\sum_{i=1}^{k} X_{i}} \\
+    \intertext{Observe that each $X_{i}$ is independent of another}<++>
+    \var{X} &= \Ex{X^2} - \Ex{X}^2 \\
+    \var{X} &= \sum_{i=1}^{n}\frac{1}{n}z_{i}^2 - \alpha^2 \\
+\end{align*}
+
+Since $\var{X}$ is finite, we can apply Chebyshev's inequality:
+
+\begin{align*}
+    &= \prob{\abs{X - \alpha} \geq \e} \leq \frac{\sigma_{x}^2}{\e^2} \\
+    &= \prob{\abs{X - \alpha} \geq \e} \leq \frac{\sigma_{x}^2}{\e^2} \\
+\end{align*}<++>
+
+
+\begingroup
+\addtolength{\jot}{1em}
+\begin{align*}
+    H f = \frac{\partial }{\partial w}\nabla f = \frac{\partial }{\partial w} \frac{-1}{n}\sum_{i \in [n]}^{}\frac{y^{i}(x^{i})}{\left(1 + \exp(y^{i}w^Tx^{i})\right)}   \\ 
+\end{align*}
+\endgroup
+
+
+
+
+%\newpage \nocite{*}
+%\bibliographystyle{ims}
+%\bibliography{citations}
+
+\end{document}
