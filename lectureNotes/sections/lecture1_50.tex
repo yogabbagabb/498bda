@@ -664,8 +664,14 @@ which establishes that $H(n) = \Theta(n)$, since both the left hand side and the
 \end{proof}
 
 \begin{remark}
-    Chekuri also shows that the variance of this algorithm is $O(n^2)$.
-\end{remark}<++>
+    Chekuri also shows that the variance of this algorithm is $O(n^2)$. We can define $X_n$ to be the value of the counter $X$ when the $n$th object comes in. When we work with a random variable like this, which is not a simple sum of binary random variables, if we have only information about the random variable's expectation and variance, we generally can only appeal to Chebhysehv's inequality for bounds on the variable's deviation from its expectation. We might later apply Chernoff's inequality to events of the form
+
+    \[
+        \abs{Y_{i} - \mu} > c \tag{$\alpha$}
+    \]
+
+    ie the binary random variable $A_{i}$ will represent the probability that $(\alpha)$ takes place (for which Chebyshev's will provide us with a minimum probability).
+\end{remark}
 
 \begin{remark}
     If we can provide an expectation and variance for an algorithm's running time, then observe that if we operate that algorithm $n$ times independently (or, perhaps, in parallel), and take the average of the algorithms' results, then the variance of the resulting algorithm's accuracy drops by a factor $1/n$.
