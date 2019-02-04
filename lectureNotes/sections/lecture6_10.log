@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  9 OCT 2018 18:51
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  3 FEB 2019 10:11
  restricted system commands enabled.
 **lecture6_10.tex
 (./lecture6_10.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.309 seconds
+luaotfload | main : initialization completed in 0.267 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2012/05/23 Federico Garcia
@@ -1393,7 +1393,19 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
 ))
-(/Users/anjaliagrawal/Library/texmf/tex/latex/local/446_preamble.sty)
+(/Users/anjaliagrawal/Library/texmf/tex/latex/local/446_preamble.sty
+(/usr/local/texlive/2017/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box86
+\UL@hyphenbox=\box87
+\UL@skip=\skip61
+\UL@hook=\toks53
+\UL@height=\dimen271
+\UL@pe=\count195
+\UL@pixel=\dimen272
+\ULC@box=\box88
+Package: ulem 2012/05/18
+\ULdepth=\dimen273
+))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
 )))
@@ -1421,17 +1433,17 @@ LaTeX Font Info:    ... okay on input line 3.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count195
-\scratchdimen=\dimen271
-\scratchbox=\box86
-\nofMPsegments=\count196
-\nofMParguments=\count197
-\everyMPshowfont=\toks53
-\MPscratchCnt=\count198
-\MPscratchDim=\dimen272
-\MPnumerator=\count199
-\makeMPintoPDFobject=\count266
-\everyMPtoPDFconversion=\toks54
+\scratchcounter=\count196
+\scratchdimen=\dimen274
+\scratchbox=\box89
+\nofMPsegments=\count197
+\nofMParguments=\count198
+\everyMPshowfont=\toks54
+\MPscratchCnt=\count199
+\MPscratchDim=\dimen275
+\MPnumerator=\count266
+\makeMPintoPDFobject=\count267
+\everyMPtoPDFconversion=\toks55
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1450,7 +1462,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box87
+\AtBeginShipoutBox=\box90
 Package hyperref Info: Link coloring OFF on input line 3.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1459,7 +1471,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count267
+\c@section@level=\count268
 )
 LaTeX Info: Redefining \ref on input line 3.
 LaTeX Info: Redefining \pageref on input line 3.
@@ -1479,13 +1491,13 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )(load luc: /Users/anjaliagrawal/Library/texlive/2017/texmf-var/luatex-cache/gen
 eric/fonts/otl/latinmodern-math.luc)
-\g__fontspec_family_latinmodern-math.otf_int=\count268
-luaotfload | aux : font no 18 (nil) does not define feature smcp for script math
+\g__fontspec_family_latinmodern-math.otf_int=\count269
+luaotfload | aux : font no 19 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 18
-luaotfload | aux : font no 18 (nil) does not define feature smcp for script math
+luaotfload | aux : no font with id 19
+luaotfload | aux : font no 19 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 18
+luaotfload | aux : no font with id 19
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1516,12 +1528,12 @@ LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/latinmodern-math.otf(0)/bx/n on inpu
 t line 3.
-luaotfload | aux : font no 18 (nil) does not define feature smcp for script math
+luaotfload | aux : font no 19 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 18
-luaotfload | aux : font no 18 (nil) does not define feature smcp for script math
+luaotfload | aux : no font with id 19
+luaotfload | aux : font no 19 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 18
+luaotfload | aux : no font with id 19
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1580,12 +1592,12 @@ LaTeX Font Info:    Encoding `U' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  U/MnSymbolF/b/n --> TU/latinmodern-math.otf(1)/bx/n on i
 nput line 3.
-luaotfload | aux : font no 18 (nil) does not define feature smcp for script math
+luaotfload | aux : font no 19 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 18
-luaotfload | aux : font no 18 (nil) does not define feature smcp for script math
+luaotfload | aux : no font with id 19
+luaotfload | aux : font no 19 (nil) does not define feature smcp for script math
  with language dflt
-luaotfload | aux : no font with id 18
+luaotfload | aux : no font with id 19
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -1641,347 +1653,68 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (load luc: /Users/anjaliagrawal/Library/texlive/2017/texmf-var/luatex-cache/gene
 ric/fonts/otl/lmroman12-regular.luc)(load luc: /Users/anjaliagrawal/Library/texl
 ive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)
-<../images/lecture6_sqloss_tilt.png, id=31, 478.78876pt x 245.91875pt>
-File: ../images/lecture6_sqloss_tilt.png Graphic file (type png)
-
-<use ../images/lecture6_sqloss_tilt.png>
-Package luatex.def Info: ../images/lecture6_sqloss_tilt.png used on input line 9
-.
-(luatex.def)             Requested size: 344.99796pt x 177.2002pt.
-
-<../images/lecture6_sqloss_bigTilt.png, id=32, 151.56625pt x 195.73125pt>
-File: ../images/lecture6_sqloss_bigTilt.png Graphic file (type png)
-
-<use ../images/lecture6_sqloss_bigTilt.png>
-Package luatex.def Info: ../images/lecture6_sqloss_bigTilt.png used on input lin
-e 19.
-(luatex.def)             Requested size: 172.50284pt x 222.76857pt.
-
-<../images/lecture6_lossFunc.png, id=33, 330.23375pt x 256.96pt>
-File: ../images/lecture6_lossFunc.png Graphic file (type png)
-
-<use ../images/lecture6_lossFunc.png>
-Package luatex.def Info: ../images/lecture6_lossFunc.png used on input line 28.
-(luatex.def)             Requested size: 345.01218pt x 268.45932pt.
- [1
-
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<../images
-/lecture6_sqloss_tilt.png><../images/lecture6_sqloss_bigTilt.png>]
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 31.
+(Font)              scaled to size 10.00015pt on input line 7.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 31.
+(Font)              scaled to size 7.0001pt on input line 7.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 31.
+(Font)              scaled to size 5.00008pt on input line 7.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 31.
+(Font)              scaled to size 9.99985pt on input line 7.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 31.
+(Font)              scaled to size 6.9999pt on input line 7.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 31.
-LaTeX Font Info:    Try loading font information for U+msa on input line 31.
+(Font)              scaled to size 4.99992pt on input line 7.
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 31.
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 31.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 7.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )(load luc: /Users/anjaliagrawal/Library/texlive/2017/texmf-var/luatex-cache/gen
 eric/fonts/otl/lmroman7-regular.luc)(load luc: /Users/anjaliagrawal/Library/texl
-ive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) [2<../im
-ages/lecture6_lossFunc.png>](load luc: /Users/anjaliagrawal/Library/texlive/2017
-/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 77.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 77.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 77.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 77.
-(load luc: /Users/anjaliagrawal/Library/texlive/2017/texmf-var/luatex-cache/gene
-ric/fonts/otl/lmroman6-regular.luc) [3] [4] [5](load luc: /Users/anjaliagrawal/L
-ibrary/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-italic.luc
-)
-<../images/lecture6_lossGraphs.png, id=85, 483.8075pt x 329.23pt>
-File: ../images/lecture6_lossGraphs.png Graphic file (type png)
+ive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) [1
 
-<use ../images/lecture6_lossGraphs.png>
-Package luatex.def Info: ../images/lecture6_lossGraphs.png used on input line 23
-8.
-(luatex.def)             Requested size: 345.01172pt x 234.77975pt.
- [6]
-<../images/lecture6_dualSlack.png, id=92, 842.14626pt x 472.76625pt>
-File: ../images/lecture6_dualSlack.png Graphic file (type png)
-
-<use ../images/lecture6_dualSlack.png>
-Package luatex.def Info: ../images/lecture6_dualSlack.png used on input line 246
-.
-(luatex.def)             Requested size: 344.9995pt x 193.67671pt.
- [7<../images/lecture6_lossGraphs.png><../images/lecture6_dualSlack.png>] [8]
-<../images/lecture7_lossFuncs.png, id=108, 710.655pt x 426.59375pt>
-File: ../images/lecture7_lossFuncs.png Graphic file (type png)
-
-<use ../images/lecture7_lossFuncs.png>
-Package luatex.def Info: ../images/lecture7_lossFuncs.png used on input line 367
-.
-(luatex.def)             Requested size: 345.00342pt x 207.0995pt.
- [9<../images/lecture7_lossFuncs.png>]
-<../images/lecture7_interp.png, id=115, 707.64375pt x 396.48125pt>
-File: ../images/lecture7_interp.png Graphic file (type png)
-
-<use ../images/lecture7_interp.png>
-Package luatex.def Info: ../images/lecture7_interp.png used on input line 385.
-(luatex.def)             Requested size: 344.99924pt x 193.29744pt.
-
-<../images/lecture7_generalLoss.png, id=116, 677.53125pt x 432.61626pt>
-File: ../images/lecture7_generalLoss.png Graphic file (type png)
-
-<use ../images/lecture7_generalLoss.png>
-Package luatex.def Info: ../images/lecture7_generalLoss.png used on input line 3
-93.
-(luatex.def)             Requested size: 345.00911pt x 220.29471pt.
- [10<../images/lecture7_interp.png><../images/lecture7_generalLoss.png>]
-<../images/lecture7_oneVsAll.png, id=126, 377.41pt x 258.9675pt>
-File: ../images/lecture7_oneVsAll.png Graphic file (type png)
-
-<use ../images/lecture7_oneVsAll.png>
-Package luatex.def Info: ../images/lecture7_oneVsAll.png used on input line 412.
-
-(luatex.def)             Requested size: 344.9985pt x 236.72768pt.
-
-Overfull \hbox (65.69843pt too wide) in paragraph at lines 412--413
- [] 
- []
-
-<../images/lecture7_poorTransitivity.png, id=127, 402.50375pt x 263.98625pt>
-File: ../images/lecture7_poorTransitivity.png Graphic file (type png)
-
-<use ../images/lecture7_poorTransitivity.png>
-Package luatex.def Info: ../images/lecture7_poorTransitivity.png used on input l
-ine 434.
-(luatex.def)             Requested size: 344.99797pt x 226.27048pt.
-
-Overfull \hbox (65.69789pt too wide) in paragraph at lines 434--435
- [] 
- []
-
-[11<../images/lecture7_oneVsAll.png>] [12<../images/lecture7_poorTransitivity.pn
-g>] <../images/lecture7_svmIntuition.png, id=144, 237.88875pt x 178.6675pt>
-File: ../images/lecture7_svmIntuition.png Graphic file (type png)
-
-<use ../images/lecture7_svmIntuition.png>
-Package luatex.def Info: ../images/lecture7_svmIntuition.png used on input line 
-496.
-(luatex.def)             Requested size: 345.01695pt x 259.12665pt.
-
-<../images/lecture7_svmIntuitionMath.png, id=145, 402.50375pt x 184.69pt>
-File: ../images/lecture7_svmIntuitionMath.png Graphic file (type png)
-
-<use ../images/lecture7_svmIntuitionMath.png>
-Package luatex.def Info: ../images/lecture7_svmIntuitionMath.png used on input l
-ine 501.
-(luatex.def)             Requested size: 344.99797pt x 158.30328pt.
- [13<../images/lecture7_svmIntuition.png><../images/lecture7_svmIntuitionMath.pn
-g>]
-<../images/lecture7_svmMulticlassConstraint.png, id=154, 553.06625pt x 46.1725p
-t>
-File: ../images/lecture7_svmMulticlassConstraint.png Graphic file (type png)
- <use ../images/lecture7_svmMulticlassConstraint.png>
-Package luatex.def Info: ../images/lecture7_svmMulticlassConstraint.png used on 
-input line 511.
-(luatex.def)             Requested size: 344.99886pt x 28.80206pt.
-
-<../images/lecture7_equivalentForm.png, id=155, 550.055pt x 116.435pt>
-File: ../images/lecture7_equivalentForm.png Graphic file (type png)
-
-<use ../images/lecture7_equivalentForm.png>
-Package luatex.def Info: ../images/lecture7_equivalentForm.png used on input lin
-e 518.
-(luatex.def)             Requested size: 345.00893pt x 73.03108pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 533--534
-
- []
-
-<../images/lecture7_equivalentFormOpt.png, id=156, 667.49374pt x 100.375pt>
-File: ../images/lecture7_equivalentFormOpt.png Graphic file (type png)
-
-<use ../images/lecture7_equivalentFormOpt.png>
-Package luatex.def Info: ../images/lecture7_equivalentFormOpt.png used on input 
-line 536.
-(luatex.def)             Requested size: 345.0108pt x 51.8813pt.
- [14<../images/lecture7_svmMulticlassConstraint.png><../images/lecture7_equivale
-ntForm.png><../images/lecture7_equivalentFormOpt.png>]
-<../images/lecture7_logisticSVM.png, id=166, 714.67pt x 440.64626pt>
-File: ../images/lecture7_logisticSVM.png Graphic file (type png)
-
-<use ../images/lecture7_logisticSVM.png>
-Package luatex.def Info: ../images/lecture7_logisticSVM.png used on input line 5
-86.
-(luatex.def)             Requested size: 345.0006pt x 212.71806pt.
- [15<../images/lecture7_logisticSVM.png>] <../images/lecture7_validKernelOps.pn
-g, id=173, 591.20876pt x 398.48875pt>
-File: ../images/lecture7_validKernelOps.png Graphic file (type png)
-
-<use ../images/lecture7_validKernelOps.png>
-Package luatex.def Info: ../images/lecture7_validKernelOps.png used on input lin
-e 596.
-(luatex.def)             Requested size: 345.00323pt x 232.54037pt.
-
-<../images/lecture8_decision_tree.png, id=174, 654.445pt x 341.275pt>
-File: ../images/lecture8_decision_tree.png Graphic file (type png)
-
-<use ../images/lecture8_decision_tree.png>
-Package luatex.def Info: ../images/lecture8_decision_tree.png used on input line
- 614.
-(luatex.def)             Requested size: 344.9968pt x 179.9063pt.
- [16<../images/lecture7_validKernelOps.png>]
-<../images/lecture8_decision_tree_algo.png, id=183, 651.43375pt x 383.4325pt>
-File: ../images/lecture8_decision_tree_algo.png Graphic file (type png)
-
-<use ../images/lecture8_decision_tree_algo.png>
-Package luatex.def Info: ../images/lecture8_decision_tree_algo.png used on input
- line 626.
-(luatex.def)             Requested size: 345.00974pt x 203.07199pt.
-File: ../images/lecture8_decision_tree_algo.png Graphic file (type png)
-
-<use ../images/lecture8_decision_tree_algo.png>
-Package luatex.def Info: ../images/lecture8_decision_tree_algo.png used on input
- line 639.
-(luatex.def)             Requested size: 345.00974pt x 203.07199pt.
- [17<../images/lecture8_decision_tree.png><../images/lecture8_decision_tree_algo
-.png>]
-<../images/lecture8_all_wrong.png, id=192, 325.215pt x 265.99374pt>
-File: ../images/lecture8_all_wrong.png Graphic file (type png)
-
-<use ../images/lecture8_all_wrong.png>
-Package luatex.def Info: ../images/lecture8_all_wrong.png used on input line 670
-.
-(luatex.def)             Requested size: 345.024pt x 282.19554pt.
- [18]
-<../images/lecture8_half_wrong.png, id=201, 667.49374pt x 373.395pt>
-File: ../images/lecture8_half_wrong.png Graphic file (type png)
-
-<use ../images/lecture8_half_wrong.png>
-Package luatex.def Info: ../images/lecture8_half_wrong.png used on input line 68
-2.
-(luatex.def)             Requested size: 345.0108pt x 192.99852pt.
- [19<../images/lecture8_all_wrong.png><../images/lecture8_half_wrong.png>]
-<../images/lecture8_bagging.png, id=209, 518.93875pt x 270.00874pt>
-File: ../images/lecture8_bagging.png Graphic file (type png)
-
-<use ../images/lecture8_bagging.png>
-Package luatex.def Info: ../images/lecture8_bagging.png used on input line 696.
-(luatex.def)             Requested size: 345.01868pt x 179.51646pt.
-
-<../images/lecture8_random_forest.png, id=210, 616.3025pt x 313.17pt>
-File: ../images/lecture8_random_forest.png Graphic file (type png)
-
-<use ../images/lecture8_random_forest.png>
-Package luatex.def Info: ../images/lecture8_random_forest.png used on input line
- 707.
-(luatex.def)             Requested size: 345.00479pt x 175.31187pt.
- [20<../images/lecture8_bagging.png><../images/lecture8_random_forest.png>]
-<../images/lecture8_boost.png, id=222, 621.32124pt x 343.2825pt>
-File: ../images/lecture8_boost.png Graphic file (type png)
-
-<use ../images/lecture8_boost.png>
-Package luatex.def Info: ../images/lecture8_boost.png used on input line 720.
-(luatex.def)             Requested size: 344.99855pt x 190.61308pt.
-
-Overfull \hbox (102.75223pt too wide) in paragraph at lines 765--765
-[] 
- []
-
-[21<../images/lecture8_boost.png>]
-<../images/lecture8_z.png, id=230, 540.0175pt x 122.4575pt>
-File: ../images/lecture8_z.png Graphic file (type png)
-
-<use ../images/lecture8_z.png>
-Package luatex.def Info: ../images/lecture8_z.png used on input line 771.
-(luatex.def)             Requested size: 345.0085pt x 78.23611pt.
-
-<../images/lecture8_alpha.png, id=231, 302.12875pt x 323.2075pt>
-File: ../images/lecture8_alpha.png Graphic file (type png)
-
-<use ../images/lecture8_alpha.png>
-Package luatex.def Info: ../images/lecture8_alpha.png used on input line 793.
-(luatex.def)             Requested size: 345.002pt x 369.07191pt.
- [22<../images/lecture8_z.png>]
-<../images/lecture8_ada_holistic.png, id=237, 605.26125pt x 336.25626pt>
-File: ../images/lecture8_ada_holistic.png Graphic file (type png)
-
-<use ../images/lecture8_ada_holistic.png>
-Package luatex.def Info: ../images/lecture8_ada_holistic.png used on input line 
-804.
-(luatex.def)             Requested size: 345.00249pt x 191.66805pt.
- [23<../images/lecture8_alpha.png>]
-<../images/lecture8_ada_final.png, id=243, 502.87875pt x 23.08624pt>
-File: ../images/lecture8_ada_final.png Graphic file (type png)
-
-<use ../images/lecture8_ada_final.png>
-Package luatex.def Info: ../images/lecture8_ada_final.png used on input line 825
-.
-(luatex.def)             Requested size: 344.99933pt x 15.83827pt.
- [24<../images/lecture8_ada_holistic.png><../images/lecture8_ada_final.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 836.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 836.
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
  (./lecture6_10.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 836.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 836.
-
-
-Package rerunfilecheck Warning: File `lecture6_10.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `lecture6_10.out':
-(rerunfilecheck)             Before: 4A06D6626D8BE733E06123B1948F8ECF;377
-(rerunfilecheck)             After:  013989F894698A36F0DFD24024E403A5;438.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+Package rerunfilecheck Info: File `lecture6_10.out' has not changed.
+(rerunfilecheck)             Checksum: 0EB9BD3E901CC4AFF5B928AB9D05BC03;44.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36905 strings out of 494481
+ 36396 strings out of 494481
  125070,1144653 words of node,token memory allocated
- 700 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 4 glue, 1 kern, 52 attribute, 59 glue_spec, 52 attr
-ibute_list, 1 write nodes
-   avail lists: 1:20,2:1041,3:150,4:39,5:356,6:1603,7:950,8:96,9:818,10:11,11:10
-9
- 39362 multiletter control sequences out of 65536+600000
- 98 fonts using 18348719 bytes
- 74i,13n,88p,866b,908s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 500 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 9 attribute, 58 glue_spec, 9 attrib
+ute_list, 1 write nodes
+   avail lists: 1:13,2:336,3:97,4:20,5:177,6:1950,7:586,8:49,9:154,10:7,11:171
+ 39278 multiletter control sequences out of 65536+600000
+ 65 fonts using 11495887 bytes
+ 74i,7n,88p,866b,337s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.ot
+f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-
+math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latin
+modern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm-mat
+h/latinmodern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public
+/lm/lmroman10-bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public
+/lm/lmroman10-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/pub
+lic/lm/lmroman12-bold.otf>
+Output written on lecture6_10.pdf (1 page, 28043 bytes).
 
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.2'
-
-warning  (pdf backend): unreferenced destination with name 'subsection.3.1'
-</usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.ot
-f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.
-otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman7-regula
-r.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmod
-ern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroma
-n10-italic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math
-/latinmodern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/
-lm-math/latinmodern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/
-public/lm/lmroman10-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/openty
-pe/public/lm/lmroman10-bold.otf></usr/local/texlive/2017/texmf-dist/fonts/openty
-pe/public/lm/lmroman12-bold.otf>
-Output written on lecture6_10.pdf (24 pages, 758562 bytes).
-
-PDF statistics: 320 PDF objects out of 1000 (max. 8388607)
- 204 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 131072)
- 64 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 76 PDF objects out of 1000 (max. 8388607)
+ 51 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 131072)
+ 24 words of extra memory for PDF output out of 10000 (max. 100000000)
 

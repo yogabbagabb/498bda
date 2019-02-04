@@ -490,7 +490,7 @@ which establishes that $H(n) = \Theta(n)$, since both the left hand side and the
 \end{proof}
 
 \begin{theorem}
-    Given $\log n$ random bits, we can construct $n$ random bits\footnote{Whenever we speak of random bits, we will implicitly assume that they are randomly distributed.} on the fly. 
+    Given $\log n$ random bits, we can construct $n$ random bits\footnote{Whenever we speak of random bits, we will implicitly assume that they are uniformly randomly distributed.} on the fly. 
 \end{theorem}
 
 \begin{proof}
@@ -677,6 +677,42 @@ which establishes that $H(n) = \Theta(n)$, since both the left hand side and the
     If we can provide an expectation and variance for an algorithm's running time, then observe that if we operate that algorithm $n$ times independently (or, perhaps, in parallel), and take the average of the algorithms' results, then the variance of the resulting algorithm's accuracy drops by a factor $1/n$.
 \end{remark}
 
+\begin{remark}
+    The median trick presupposes that we have a bound of the form $(\alpha)$ -- see an earlier equation. In particular, the bound appears like
+    
+    \[
+        \prob{\abs{Y_{i} - \mu} > c} \leq d 
+    \]
+    Assembling a collection $Q = \{Y_{i}\}$, we use the value of the median in $Q$, for the median is, with high probability, a good estimator of the expectation. Why? Let us say that a member $Y_{i}$ is a good estimator if $\abs{Y_{i} - \mu}$ is within $c$; $Y_{i}$ is a bad estimator, by contrast, if the foregoing difference exceeds $c$. If the median is not a good estimator, then necessarily more than half of the members in the collection are bad members. Thus, whatever probability bound exists on the scenario that more than half the members are bad is also applicable to the scenario that the median is bad. Fortunately, we can apply Chernoff bounds to the former -- meaning, effectively, the latter.
+\end{remark}
+
+\begin{example}
+    In Chekuri's notes, we find that after defining $Z^{i}$ to be an average of the $Y_{i}$, where $Y_{i} = 2^{X_{i}}$, the following bound is applies to $Z^{i}$:
+
+    \[
+        \prob{\abs{Z^{i} - \underbrace{n}_{\mu}} > n\e} \leq 1/4
+    \]
+
+    We wish to have the probability bound above be $\delta$ accurate. To do so, we define $A^{i}$ as the binary random variable where $\abs{Z^{i} - \underbrace{n}_{\mu}} > n\e$; that is $A^{i}$ takes on $1$ if $Z^{i}$ is bad; otherwise, $A^{i}$ is good. The probability that $A^{i}$ is bad is, at most, $1/4$. Suppose that we have $n$ such $A^{i}$. What is the probability that more than half of the $A^{i}$ are bad. The probability can be bounded by the Chernoff bound:
+
+    For $\delta \in (0,1)$ we have:
+
+    \[
+        \prob{\abs{X - \mu} \geq \mu(\delta)} \leq 2\exp{-\mu \delta^2 /3}
+    \]
+
+    Here we let $X = \sum_{i=1}^{l}A^{i}$ where $l$ is the number of events, we let $\mu = l/4$ and we let $\delta = 2$.
+
+    \begin{align*}
+        &= 2\exp{-(l/4)(4/3)} \\
+        &= 2\exp{-l/3} \\
+        \intertext{Let $l = c \log(1/\delta)$. Let $c = 3$.} \\
+        &= 2\exp{-3(\log(1/\delta))/3} \\
+        &= 2\exp{-\log(1/\delta)} \\
+        &= 2\exp{\log(\delta)} \\
+        &= 2\delta
+    \end{align*}
+\end{example}
 
 \end{document}
 
