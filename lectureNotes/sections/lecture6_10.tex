@@ -215,6 +215,99 @@ In what follows, I give a high level overview of how to understand the analysis 
 
 \end{remark}
 
+\section{Lecture 8}{Estimation of $F_2$}
+
+\begin{remark}
+    $F_2$ is special for ``fundamental'' reasons.
+\end{remark}
+
+\begin{unresolved}
+    The previous lecture's AMS algorithm purportedly establishes that we can estimate $F_2$ in $\sqrt{n} \log n$ space. The analysis revealed that we need $O(\sqrt{n})$ versions of the algorithm to run in parallel. It is not clear, however, that each version requires $\log n$ space -- indeed, the algorithm needs counters that are at most $m$, which would suggest $\log m$ space. In the event that $m \in O(n^k)$ for some $k$, then this would be okay.\\
+
+   Update: It is likely that we need $\log(n)$ space to store the hash function.
+\end{unresolved}
+
+\begin{lemma}
+    Consider the following algorithm:
+    \begin{algo}
+        \xs{AMS-$F_2$-Estimate:} \+\\
+        Suppose that $h$ is chosen from a 4-wise independent hash family with formula $[n] \to \{-1,1\}$. \\
+        $z \leftarrow 0$ \\
+        For each $e_j$: \+\\
+            $z \leftarrow h(e_j)$ \-\\
+        Output $z^2$.
+    \end{algo}
+
+    This algorithm estimates $F_2$ with $(\e, \delta)$ accuracy if we use $O(\log (1/\delta) \frac{1}{\e^2} \log n)$ bits. 
+\end{lemma}
+
+\begin{proof}
+    See lecture notes 8.
+    \url{https://courses.engr.illinois.edu/cs498abd/sp2019/slides/08.pdf}
+\end{proof}
+
+\begin{remark}
+    This algorithm can be extended to estimate not just the $2$ norm of the frequency vector but the square of the euclidean norm of any vector (and hence the euclidean norm itself). This is again covered in his lecture notes. In fact, wherever in the proof of the AMS-$F_2$ algoritm one uses $f_i$, just replace it by $x_i$.
+\end{remark}
+
+\begin{remark}
+    $k$-wise independent families satisfy the property that for any $S = \{a_1 \dots a_k\} \s [n]$, we have that all elements in $S$ are independent. In particular, a $k$-wise independent hash family guarantees that the hash of any input is uniformly distributed and that any $4$ hashes are independent.
+\end{remark}
+
+\begin{definition}
+    A sketch $c$ of a stream $\sigma$ is a function such that
+    $c(\sigma_1 \cdot \sigma_2) = c(\sigma_1) * c(\sigma_2)$. Here, $*$ is some operation and $\sigma_i$ are subsets of the stream and $\cdot$ is concatenation.
+\end{definition}
+
+\begin{remark}
+    The previous algorithm $A$ is a linear sketch\footnote{Note that the algorithm returns $z$ and one must additionally post-process this return value by returning $z^2$, so that we treat the algorithm as solely returning $z$}. For if we use the same hash function over two streams $\sigma_1$ and $\sigma_2$ then $(A(\sigma_1) + A(\sigma_2))^2 = A(\sigma_1 \cdot \sigma_2)^2$.
+\end{remark}
+
+\begin{remark}
+    If we wish to run this algorithm in order to attain $(\e, \delta)$ accuracy, then could formulate it as follows:
+
+    Create the matrix
+
+    \[
+        M = \begin{bmatrix}
+            h_1(1) \dots h_1(n) \\
+            \vdots \\
+            h_{O(\frac{1}{\e^2} \log(1/\delta))}(1) \dots h_{O(\frac{1}{\e^2} \log(1/\delta))}(n)
+        \end{bmatrix}
+    \]
+
+    Then when the token $(i_t, \delta_{i_t})$ where $i_t \in [n]$ for $t \in [m]$ appears, update a vector $Z$ of initially $O(\frac{1}{\e^2} \log(1/\delta))$ zeros so that $Z = Z + \delta_i * M(e_{ i_t })$. At the end, we will have a vector of algorithm estimates, which we should take the median $q$ of and then output $q^2$. In this formulation, we see that if we havea single $M$ across two runs of this experiment and let
+
+    \[
+        x_q = \sum_{t=1}^{m}\delta_{i_t}e_{i_t}
+    \]
+
+    for $q \in \left\{ 1,2 \right\}$ (for both runs) then,
+
+    \[
+        M(x_1 + x_2) = Mx_1 + Mx_2
+    \]
+
+    Here $x_1 + x_2$ represents the action of taking the concatenation of both streams. This gives some insight as to why the algorithm is called a linear sketch.
+\end{remark}
+
+
+\section{Lecture 9}{Heavy Hitters}
+
+\begin{remark}
+    Note that the algorithm to the determine the majority element can be shown to output the correct member, if there is in fact a majority element. If there is no majority element, there may be garbage.
+\end{remark}
+
+\begin{remark}
+    The deterministic algorithm that returns those elements whose frequency is greater than $m/k$ for some $k$ will at least output those elements $i \in [n]$ such that $f_i \geq m/k$; however, this algorithm may also erroneously return those $i$ such that $f_i < m/k$.
+    \begin{unresolved}
+        A second pass of the output will suffice to weed out those elements whose frequency moment is small.
+    \end{unresolved}
+
+\end{remark}
+
+We stopped watching at minute 57 of Tuesdsay February 12th lecture. Professor was then giving a high level overview of the randomized algorithm that allows one to find heavy hitters (also allowing for negative frequency updates).
+
 
 \end{document}
 

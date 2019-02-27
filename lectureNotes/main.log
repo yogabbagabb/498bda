@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  17 FEB 2019 10:47
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.5.23)  26 FEB 2019 21:00
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -35,7 +35,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.256 seconds
+luaotfload | main : initialization completed in 0.232 seconds
 Babel <3.10> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1725,7 +1725,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--228
 
  []
 
-<images/lecture3_chernoff_nonneg.png, id=68, 594.22pt x 379.4175pt>
+<images/lecture3_chernoff_nonneg.png, id=84, 594.22pt x 379.4175pt>
 File: images/lecture3_chernoff_nonneg.png Graphic file (type png)
 
 <use images/lecture3_chernoff_nonneg.png>
@@ -1733,7 +1733,7 @@ Package luatex.def Info: images/lecture3_chernoff_nonneg.png used on input line
 246.
 (luatex.def)             Requested size: 345.01053pt x 220.29387pt.
  [5]
-<images/lecture3_chernoff_nonneg_simp.png, id=76, 591.20876pt x 407.5225pt>
+<images/lecture3_chernoff_nonneg_simp.png, id=92, 591.20876pt x 407.5225pt>
 File: images/lecture3_chernoff_nonneg_simp.png Graphic file (type png)
 
 <use images/lecture3_chernoff_nonneg_simp.png>
@@ -1741,7 +1741,7 @@ Package luatex.def Info: images/lecture3_chernoff_nonneg_simp.png used on input
 line 253.
 (luatex.def)             Requested size: 345.00323pt x 237.81207pt.
 
-<images/lecture3_chernoff_general.png, id=77, 594.22pt x 211.79124pt>
+<images/lecture3_chernoff_general.png, id=93, 594.22pt x 211.79124pt>
 File: images/lecture3_chernoff_general.png Graphic file (type png)
 
 <use images/lecture3_chernoff_general.png>
@@ -1764,7 +1764,7 @@ Overfull \hbox (150.69075pt too wide) detected at line 396
 \l_fontspec_font ℙ [] ≤ [] ℙ [] = 𝛿
  []
 
-[9] <images/lecture3_final_randomized.png, id=109, 543.02875pt x 142.5325pt>
+[9] <images/lecture3_final_randomized.png, id=125, 543.02875pt x 142.5325pt>
 File: images/lecture3_final_randomized.png Graphic file (type png)
 
 <use images/lecture3_final_randomized.png>
@@ -1801,35 +1801,71 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 (Font)              scaled to size 8.99986pt on input line 651.
  [14]) (./sections/lecture6_10.tex
-[15] [16]) [17]
+[15] [16] [17]
+Overfull \hbox (23.65134pt too wide) in paragraph at lines 121--121
+[] 
+ []
+
+
+Overfull \hbox (65.69992pt too wide) in paragraph at lines 123--124
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
+
+ []
+
+[18] <images/lecture7_ams.png, id=206, 818.05624pt x 488.82625pt>
+File: images/lecture7_ams.png Graphic file (type png)
+
+<use images/lecture7_ams.png>
+Package luatex.def Info: images/lecture7_ams.png used on input line 196.
+(luatex.def)             Requested size: 345.00429pt x 206.15593pt.
+ [19](load luc: /Users/anjaliagrawal/Library/texlive/2017/texmf-var/luatex-cache
+/generic/fonts/otl/lmmono10-regular.luc)
+Overfull \hbox (0.75pt too wide) in paragraph at lines 214--215
+[][]$\TU/lmtt/m/n/10 https://courses.engr.illinois.edu/cs498abd/sp2019/slides/0
+7.pdf$[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+[20<./images/lecture7_ams.png>](load luc: /Users/anjaliagrawal/Library/texlive/2
+017/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc)
+Overfull \hbox (53.8222pt too wide) in paragraph at lines 232--239
+ [] 
+ []
+
+[21]) [22]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 12.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 12.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 12.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 12.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 0C9410AA667090B7251269C4BC433712;264
-(rerunfilecheck)             After:  397B4C513F44A733C3970C7F74408798;318.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 905CC2B1484B7C2F35FDE3A67F7E6FD3;451.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 12.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36636 strings out of 494481
+ 36684 strings out of 494481
  100000,1144653 words of node,token memory allocated
- 769 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 6 glue, 1 kern, 67 attribute, 58 glue_spec, 67 attr
-ibute_list, 1 write nodes
-   avail lists: 1:16,2:490,3:129,4:31,5:253,6:2597,7:914,8:67,9:369,10:11,11:196
+ 845 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 8 glue, 1 kern, 81 attribute, 58 glue_spec, 81 attr
+ibute_list, 1 write, 1 pdf_action nodes
+   avail lists: 1:16,2:569,3:137,4:33,5:266,6:2596,7:912,8:93,9:425,10:11,11:196
 
- 39350 multiletter control sequences out of 65536+600000
- 112 fonts using 21315119 bytes
- 65i,12n,86p,1082b,595s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 39361 multiletter control sequences out of 65536+600000
+ 114 fonts using 21571623 bytes
+ 65i,12n,86p,1082b,818s stack positions out of 5000i,500n,10000p,200000b,100000s
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.6'
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.5'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.4'
 
@@ -1838,22 +1874,24 @@ warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
-</usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.ot
-f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.
-otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman6-regula
-r.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman7-regu
-lar.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinm
-odern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmro
-man10-italic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm-ma
+</usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regul
+ar.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-reg
+ular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman9-r
+egular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8
+-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroma
+n6-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmro
+man7-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm-ma
 th/latinmodern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/publi
-c/lm-math/latinmodern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opentyp
-e/public/lm/lmroman10-bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentyp
-e/public/lm/lmroman10-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/open
-type/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (17 pages, 227865 bytes).
+c/lm/lmroman10-italic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/pub
+lic/lm-math/latinmodern-math.otf></usr/local/texlive/2017/texmf-dist/fonts/opent
+ype/public/lm-math/latinmodern-math.otf></usr/local/texlive/2017/texmf-dist/font
+s/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2017/texmf-dist/font
+s/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2017/texmf-dist/f
+onts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (22 pages, 291110 bytes).
 
-PDF statistics: 259 PDF objects out of 1000 (max. 8388607)
- 197 compressed objects within 2 object streams
- 80 named destinations out of 1000 (max. 131072)
- 64 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 340 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 107 named destinations out of 1000 (max. 131072)
+ 96 words of extra memory for PDF output out of 10000 (max. 100000000)
 
